@@ -1,8 +1,6 @@
 # UnitSplit
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/unit_split`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Split numbers by unit
 
 ## Installation
 
@@ -22,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+$ unit_split --byte 12346456456
+
+$ unit_split --sec 12346456456
+
+$ unit_split --yen 12346456456
+
 
 ## Development
 
