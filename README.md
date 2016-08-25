@@ -21,11 +21,11 @@ Or install it yourself as:
 ## Usage
 
 
-$ unit_split --byte 12346456456
+$ unit_split -b 12346456456
 
-$ unit_split --sec 12346456456
+$ unit_split -s 12346456456
 
-$ unit_split --yen 12346456456
+$ unit_split -j 12346456456
 
 
 ## Development
