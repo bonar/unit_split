@@ -2,6 +2,40 @@
 
 Split numbers by unit
 
+## Usage
+
+Bytes (-b)
+
+    $ unit_split -b 32227939482
+     30 GB
+     14 MB
+    981 KB
+    154
+
+Seconds (-s)
+
+    $ unit_split -s 50000
+    13 hour
+    53 min
+    20
+
+Japanese numbers (-j)
+
+    $ unit_split -j 123534590029342
+     123 cho
+    5345 oku
+    9002 man
+    9342
+
+You can pass number via STDIN
+
+    $ echo "123382938749234" | unit_split -b
+    112 TB
+    221 GB
+    323 MB
+    786 KB
+    306
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,21 +52,6 @@ Or install it yourself as:
 
     $ gem install unit_split
 
-## Usage
-
-
-$ unit_split -b 12346456456
-
-$ unit_split -s 12346456456
-
-$ unit_split -j 12346456456
-
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
