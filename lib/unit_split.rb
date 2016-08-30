@@ -22,11 +22,6 @@ module UnitSplit
       value  = (number / divider)
       remain = (number % divider)
 
-      # puts "----------"
-      # puts "number = " + number.to_s
-      # puts "value  = " + value.to_s
-      # puts "remain = " + remain.to_s
-
       response.push([last_label, remain])
 
       if value == 0
