@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'unit_split/cli'
+UnitSplit::CLI.bootstrap(ARGV)
+
